@@ -1,1 +1,811 @@
-sddd
+
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Face Protection Ice Silk - Importan.co</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+        
+        body {
+            font-family: 'Poppins', sans-serif;
+            scroll-behavior: smooth;
+        }
+        
+        .gradient-bg {
+            background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+        }
+        
+        .product-shadow {
+            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+        }
+        
+        .countdown-box {
+            background: linear-gradient(45deg, #ff4e50, #f9d423);
+        }
+        
+        .popup-order {
+            animation: slideUp 0.5s ease-out;
+            bottom: 20px;
+            right: 20px;
+        }
+        
+        @keyframes slideUp {
+            from { transform: translateY(100px); opacity: 0; }
+            to { transform: translateY(0); opacity: 1; }
+        }
+        
+        .modal {
+            transition: all 0.3s ease;
+        }
+        
+        .modal-content {
+            max-height: 90vh;
+        }
+        
+        .swiper {
+            width: 100%;
+            height: 100%;
+        }
+        
+        .swiper-slide {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        
+        .swiper-button-next, .swiper-button-prev {
+            color: #fff;
+            background: rgba(0,0,0,0.5);
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        
+        .swiper-button-next:after, .swiper-button-prev:after {
+            font-size: 20px;
+        }
+    </style>
+</head>
+<body class="bg-gray-50">
+    <!-- Header -->
+    <header class="sticky top-0 z-50 bg-white shadow-md">
+        <div class="container mx-auto px-4 py-3 flex justify-between items-center">
+            <div class="flex items-center">
+                <img src="https://scontent.fsub8-1.fna.fbcdn.net/v/t39.30808-1/480470725_122218523756059217_4375162344964440565_n.jpg?stp=dst-jpg_s200x200_tt6&_nc_cat=110&ccb=1-7&_nc_sid=2d3e12&_nc_ohc=jfyepeJck3QQ7kNvwF2S-C2&_nc_oc=Adljd9pMRuCzpNymtc34UL-GSXTnubZZdFfUJhmwrhIEZhk6L73EuHJulHHJgYCeN-w&_nc_zt=24&_nc_ht=scontent.fsub8-1.fna&_nc_gid=COBS0edcQe4CYG84mmwjWA&oh=00_AfPxpvSpYJTeGcELFOIxRMC-6IBYSGgoC-IXl_-3EJpRTQ&oe=685B476E" alt="Importan.co Logo" class="h-10 w-10 rounded-full">
+                <span class="ml-3 font-bold text-xl text-gray-800">Importan.co</span>
+            </div>
+            <div class="hidden md:flex space-x-6">
+                <a href="#features" class="text-gray-700 hover:text-blue-600 transition">Fitur</a>
+                <a href="#testimonials" class="text-gray-700 hover:text-blue-600 transition">Testimoni</a>
+                <a href="#gallery" class="text-gray-700 hover:text-blue-600 transition">Galeri</a>
+                <a href="#faq" class="text-gray-700 hover:text-blue-600 transition">FAQ</a>
+            </div>
+            <button id="orderBtn" class="bg-blue-600 hover:bg-blue-700 text-white px-4 py-2 rounded-full font-medium transition transform hover:scale-105">
+                BELI SEKARANG
+            </button>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="gradient-bg py-12 md:py-20">
+        <div class="container mx-auto px-4 flex flex-col md:flex-row items-center">
+            <div class="md:w-1/2 mb-10 md:mb-0">
+                <h1 class="text-3xl md:text-5xl font-bold text-gray-800 leading-tight mb-4">
+                    Face Protection Ice Silk - Perlindungan Wajah Premium
+                </h1>
+                <p class="text-lg text-gray-600 mb-6">
+                    Lindungi wajah Anda dari sinar UV, polusi, dan debu dengan bahan Ice Silk yang nyaman dan sejuk dipakai sepanjang hari.
+                </p>
+                <div class="flex items-center mb-6">
+                    <div class="flex mr-4">
+                        <i class="fas fa-star text-yellow-400"></i>
+                        <i class="fas fa-star text-yellow-400"></i>
+                        <i class="fas fa-star text-yellow-400"></i>
+                        <i class="fas fa-star text-yellow-400"></i>
+                        <i class="fas fa-star text-yellow-400"></i>
+                    </div>
+                    <span class="text-gray-700">4.9/5 dari 1.250+ review</span>
+                </div>
+                <div class="flex flex-wrap gap-4 mb-8">
+                    <div class="bg-white rounded-lg p-3 shadow-sm flex items-center">
+                        <i class="fas fa-shield-alt text-blue-500 mr-2"></i>
+                        <span>UPF 50+ Protection</span>
+                    </div>
+                    <div class="bg-white rounded-lg p-3 shadow-sm flex items-center">
+                        <i class="fas fa-wind text-blue-500 mr-2"></i>
+                        <span>Breathable Material</span>
+                    </div>
+                    <div class="bg-white rounded-lg p-3 shadow-sm flex items-center">
+                        <i class="fas fa-tshirt text-blue-500 mr-2"></i>
+                        <span>One Size Fits All</span>
+                    </div>
+                </div>
+                <button id="heroOrderBtn" class="bg-blue-600 hover:bg-blue-700 text-white px-8 py-4 rounded-full font-bold text-lg transition transform hover:scale-105 shadow-lg">
+                    BELI SEKARANG - Rp 199.000
+                </button>
+            </div>
+            <div class="md:w-1/2 flex justify-center">
+                <img src="https://cdn.hotishop.com/image/4753c0c5dd52d2baf41ecdbfa60ed47c15c5b205-600.gif" alt="Face Protection Ice Silk" class="rounded-lg product-shadow w-full max-w-md">
+            </div>
+        </div>
+    </section>
+
+    <!-- Counter Section -->
+    <section class="bg-white py-8 shadow-sm">
+        <div class="container mx-auto px-4">
+            <div class="flex flex-wrap justify-around text-center">
+                <div class="px-4 py-2">
+                    <div class="text-3xl font-bold text-blue-600 mb-1" id="viewerCount">1250</div>
+                    <div class="text-gray-600">Pengunjung Hari Ini</div>
+                </div>
+                <div class="px-4 py-2">
+                    <div class="text-3xl font-bold text-blue-600 mb-1" id="soldCount">875</div>
+                    <div class="text-gray-600">Terjual Bulan Ini</div>
+                </div>
+                <div class="px-4 py-2">
+                    <div class="text-3xl font-bold text-blue-600 mb-1" id="stockCount">42</div>
+                    <div class="text-gray-600">Stok Tersisa</div>
+                </div>
+                <div class="px-4 py-2">
+                    <div class="text-3xl font-bold text-blue-600 mb-1">4.9/5</div>
+                    <div class="text-gray-600">Rating Pelanggan</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Countdown Timer -->
+    <section class="py-8 bg-gray-100">
+        <div class="container mx-auto px-4 text-center">
+            <div class="max-w-3xl mx-auto bg-white rounded-xl p-6 shadow-md">
+                <h2 class="text-2xl font-bold text-gray-800 mb-4">PROMO TERBATAS!</h2>
+                <p class="text-gray-600 mb-6">Diskon 50% akan berakhir dalam:</p>
+                <div class="countdown-box rounded-lg p-4 inline-block">
+                    <div class="flex justify-center space-x-4">
+                        <div class="text-center">
+                            <div class="text-3xl font-bold text-white" id="countdown-days">00</div>
+                            <div class="text-white">Hari</div>
+                        </div>
+                        <div class="text-3xl font-bold text-white pt-1">:</div>
+                        <div class="text-center">
+                            <div class="text-3xl font-bold text-white" id="countdown-hours">00</div>
+                            <div class="text-white">Jam</div>
+                        </div>
+                        <div class="text-3xl font-bold text-white pt-1">:</div>
+                        <div class="text-center">
+                            <div class="text-3xl font-bold text-white" id="countdown-minutes">00</div>
+                            <div class="text-white">Menit</div>
+                        </div>
+                        <div class="text-3xl font-bold text-white pt-1">:</div>
+                        <div class="text-center">
+                            <div class="text-3xl font-bold text-white" id="countdown-seconds">00</div>
+                            <div class="text-white">Detik</div>
+                        </div>
+                    </div>
+                </div>
+                <p class="text-red-500 font-medium mt-4">Harga normal Rp 298.500, sekarang hanya Rp 199.000!</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Problem Solution Section -->
+    <section class="py-16 bg-white">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl font-bold text-center text-gray-800 mb-12">Masalah & Solusi</h2>
+            <div class="grid md:grid-cols-2 gap-8">
+                <div class="bg-gray-100 rounded-xl p-6">
+                    <h3 class="text-xl font-bold text-red-500 mb-4 flex items-center">
+                        <i class="fas fa-exclamation-circle mr-3"></i> Masalah yang Sering Dihadapi
+                    </h3>
+                    <ul class="space-y-3">
+                        <li class="flex items-start">
+                            <i class="fas fa-times text-red-400 mt-1 mr-3"></i>
+                            <span>Wajah terbakar sinar matahari saat berkendara atau beraktivitas outdoor</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-times text-red-400 mt-1 mr-3"></i>
+                            <span>Masker biasa membuat panas dan tidak nyaman dipakai lama</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-times text-red-400 mt-1 mr-3"></i>
+                            <span>Kulit wajah kusam karena polusi dan debu</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-times text-red-400 mt-1 mr-3"></i>
+                            <span>Masker mudah lembab dan bau saat dipakai berjam-jam</span>
+                        </li>
+                    </ul>
+                </div>
+                <div class="bg-blue-50 rounded-xl p-6">
+                    <h3 class="text-xl font-bold text-blue-500 mb-4 flex items-center">
+                        <i class="fas fa-check-circle mr-3"></i> Solusi dari Face Protection Ice Silk
+                    </h3>
+                    <ul class="space-y-3">
+                        <li class="flex items-start">
+                            <i class="fas fa-check text-green-500 mt-1 mr-3"></i>
+                            <span>Bahan Ice Silk dengan teknologi pendingin membuat wajah tetap sejuk</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-check text-green-500 mt-1 mr-3"></i>
+                            <span>Proteksi UPF 50+ melindungi dari sinar UV berbahaya</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-check text-green-500 mt-1 mr-3"></i>
+                            <span>Material breathable yang nyaman dipakai seharian</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-check text-green-500 mt-1 mr-3"></i>
+                            <span>Desain ergonomis cocok untuk semua bentuk wajah</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section id="features" class="py-16 bg-gray-50">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl font-bold text-center text-gray-800 mb-12">Fitur Unggulan</h2>
+            <div class="grid md:grid-cols-3 gap-8">
+                <div class="bg-white rounded-xl p-6 shadow-md hover:shadow-lg transition">
+                    <div class="text-blue-500 text-4xl mb-4">
+                        <i class="fas fa-sun"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3">Proteksi UV 50+</h3>
+                    <p class="text-gray-600">Melindungi wajah dari sinar UV berbahaya dengan rating UPF 50+, mencegah kulit terbakar dan penuaan dini.</p>
+                </div>
+                <div class="bg-white rounded-xl p-6 shadow-md hover:shadow-lg transition">
+                    <div class="text-blue-500 text-4xl mb-4">
+                        <i class="fas fa-snowflake"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3">Efek Dingin Instan</h3>
+                    <p class="text-gray-600">Teknologi Ice Silk memberikan sensasi dingin seketika saat dipakai, menurunkan suhu wajah hingga 5°C.</p>
+                </div>
+                <div class="bg-white rounded-xl p-6 shadow-md hover:shadow-lg transition">
+                    <div class="text-blue-500 text-4xl mb-4">
+                        <i class="fas fa-wind"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3">Breathable & Nyaman</h3>
+                    <p class="text-gray-600">Material khusus yang memungkinkan sirkulasi udara optimal, mencegah pengap dan lembab.</p>
+                </div>
+                <div class="bg-white rounded-xl p-6 shadow-md hover:shadow-lg transition">
+                    <div class="text-blue-500 text-4xl mb-4">
+                        <i class="fas fa-recycle"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3">Anti-Bakteri</h3>
+                    <p class="text-gray-600">Dilapisi teknologi silver ion yang mencegah pertumbuhan bakteri penyebab bau tidak sedap.</p>
+                </div>
+                <div class="bg-white rounded-xl p-6 shadow-md hover:shadow-lg transition">
+                    <div class="text-blue-500 text-4xl mb-4">
+                        <i class="fas fa-tshirt"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3">One Size Fits All</h3>
+                    <p class="text-gray-600">Desain elastis yang cocok untuk semua bentuk wajah, baik pria maupun wanita.</p>
+                </div>
+                <div class="bg-white rounded-xl p-6 shadow-md hover:shadow-lg transition">
+                    <div class="text-blue-500 text-4xl mb-4">
+                        <i class="fas fa-tint"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3">Quick Dry</h3>
+                    <p class="text-gray-600">Cepat kering setelah dicuci, praktis untuk penggunaan sehari-hari.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Product Details -->
+    <section class="py-16 bg-white">
+        <div class="container mx-auto px-4">
+            <div class="flex flex-col md:flex-row items-center">
+                <div class="md:w-1/2 mb-8 md:mb-0 md:pr-8">
+                    <img src="https://cdn.hotishop.com/image/79ce6bc05beb775a190d65c0f4480141738f0df3-600.webp" alt="Face Protection Detail" class="rounded-lg shadow-md w-full">
+                </div>
+                <div class="md:w-1/2">
+                    <h2 class="text-3xl font-bold text-gray-800 mb-6">Detail Produk</h2>
+                    <div class="space-y-4">
+                        <div class="flex items-start">
+                            <div class="bg-blue-100 p-2 rounded-full mr-4">
+                                <i class="fas fa-check text-blue-500"></i>
+                            </div>
+                            <div>
+                                <h3 class="font-bold text-gray-800">Bahan Berkualitas Tinggi</h3>
+                                <p class="text-gray-600">Terbuat dari 92% Polyester dan 8% Spandex dengan teknologi Ice Silk untuk kenyamanan maksimal.</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start">
+                            <div class="bg-blue-100 p-2 rounded-full mr-4">
+                                <i class="fas fa-check text-blue-500"></i>
+                            </div>
+                            <div>
+                                <h3 class="font-bold text-gray-800">Multi Fungsi</h3>
+                                <p class="text-gray-600">Cocok untuk bersepeda, motor, hiking, jogging, atau aktivitas outdoor lainnya.</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start">
+                            <div class="bg-blue-100 p-2 rounded-full mr-4">
+                                <i class="fas fa-check text-blue-500"></i>
+                            </div>
+                            <div>
+                                <h3 class="font-bold text-gray-800">Perawatan Mudah</h3>
+                                <p class="text-gray-600">Bisa dicuci dengan mesin (suhu rendah) atau manual, tahan lama hingga 100x pencucian.</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start">
+                            <div class="bg-blue-100 p-2 rounded-full mr-4">
+                                <i class="fas fa-check text-blue-500"></i>
+                            </div>
+                            <div>
+                                <h3 class="font-bold text-gray-800">Paket Lengkap</h3>
+                                <p class="text-gray-600">Setiap pembelian termasuk 1 Face Protection Ice Silk dalam kemasan eksklusif.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <button id="detailOrderBtn" class="mt-8 bg-blue-600 hover:bg-blue-700 text-white px-8 py-3 rounded-full font-bold text-lg transition transform hover:scale-105 shadow-lg">
+                        DAPATKAN DISKON 50% SEKARANG
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Suitable For Section -->
+    <section class="py-16 bg-gray-50">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl font-bold text-center text-gray-800 mb-12">Cocok Untuk</h2>
+            <div class="grid md:grid-cols-2 gap-8">
+                <div class="bg-white rounded-xl p-6 shadow-md">
+                    <img src="https://cdn.hotishop.com/image/2aeaf1c85a024fc3d3262a0c34b895ecf38dbe08-600.gif" alt="Suitable for activities" class="rounded-lg w-full mb-4">
+                    <h3 class="text-xl font-bold mb-3">Berbagai Aktivitas Outdoor</h3>
+                    <p class="text-gray-600">Sempurna untuk bersepeda, naik motor, hiking, jogging, atau sekadar jalan-jalan di siang hari yang terik.</p>
+                </div>
+                <div class="bg-white rounded-xl p-6 shadow-md">
+                    <img src="https://cdn.hotishop.com/image/1de69a680b620249faa251aab6802dfe0e39ad8a-600.webp" alt="All skin types" class="rounded-lg w-full mb-4">
+                    <h3 class="text-xl font-bold mb-3">Semua Jenis Kulit</h3>
+                    <p class="text-gray-600">Aman untuk kulit sensitif, tidak menyebabkan iritasi atau alergi karena bahan yang hypoallergenic.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Color Options -->
+    <section class="py-16 bg-white">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl font-bold text-center text-gray-800 mb-12">Pilihan Warna Eksklusif</h2>
+            <div class="flex flex-wrap justify-center gap-8">
+                <div class="text-center">
+                    <img src="https://cdn.hotishop.com/image/46c9a9ded7fefd6dbf5c9a68db0f52585079523c-400.jpeg" alt="Black Color" class="w-48 h-48 object-cover rounded-full border-4 border-gray-200 shadow-md mx-auto">
+                    <h3 class="text-xl font-bold mt-4">Hitam</h3>
+                    <p class="text-gray-600">Elegant & Maskulin</p>
+                </div>
+                <div class="text-center">
+                    <img src="https://cdn.hotishop.com/image/b8b2e26e0540f82988911b3137005e6d98609261-400.jpeg" alt="Grey Color" class="w-48 h-48 object-cover rounded-full border-4 border-gray-200 shadow-md mx-auto">
+                    <h3 class="text-xl font-bold mt-4">Abu-abu</h3>
+                    <p class="text-gray-600">Netral & Stylish</p>
+                </div>
+            </div>
+            <p class="text-center mt-8 text-gray-600">*Warna mungkin sedikit berbeda tergantung pengaturan layar perangkat Anda</p>
+        </div>
+    </section>
+
+    <!-- Gallery Section -->
+    <section id="gallery" class="py-16 bg-gray-50">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl font-bold text-center text-gray-800 mb-12">Galeri Produk</h2>
+            <div class="grid grid-cols-2 md:grid-cols-3 gap-4">
+                <div class="gallery-item cursor-pointer">
+                    <img src="https://cdn.hotishop.com/image/bc31cf57b22cd700a32617464c85df819657f074-600.gif" alt="Product Gallery 1" class="w-full h-48 md:h-64 object-cover rounded-lg shadow hover:shadow-lg transition">
+                </div>
+                <div class="gallery-item cursor-pointer">
+                    <img src="https://cdn.hotishop.com/image/c10e90dfd34c3566c0f516285fd4c91d94ebdaab-600.gif" alt="Product Gallery 2" class="w-full h-48 md:h-64 object-cover rounded-lg shadow hover:shadow-lg transition">
+                </div>
+                <div class="gallery-item cursor-pointer">
+                    <img src="https://cdn.hotishop.com/image/d571496abb5ddef2c325d6c89d5cf17f3fdd44cd.gif" alt="Product Gallery 3" class="w-full h-48 md:h-64 object-cover rounded-lg shadow hover:shadow-lg transition">
+                </div>
+                <div class="gallery-item cursor-pointer">
+                    <img src="https://cdn.hotishop.com/image/f09e11c1e566f666e0145110e9c44d8f15973858.gif" alt="Product Gallery 4" class="w-full h-48 md:h-64 object-cover rounded-lg shadow hover:shadow-lg transition">
+                </div>
+                <div class="gallery-item cursor-pointer">
+                    <img src="https://cdn.hotishop.com/image/bf7cc73fdc7cbe10da3c234801ebec17b9727fda.gif" alt="Product Gallery 5" class="w-full h-48 md:h-64 object-cover rounded-lg shadow hover:shadow-lg transition">
+                </div>
+                <div class="gallery-item cursor-pointer">
+                    <img src="https://cdn.hotishop.com/image/6a91141e800cc847b29430697882e1d3bb4b21c2-600.webp" alt="Product Gallery 6" class="w-full h-48 md:h-64 object-cover rounded-lg shadow hover:shadow-lg transition">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gallery Modal -->
+    <div id="galleryModal" class="fixed inset-0 z-50 flex items-center justify-center bg-black bg-opacity-80 hidden modal">
+        <div class="relative max-w-4xl w-full mx-4">
+            <div class="bg-white rounded-lg overflow-hidden modal-content">
+                <img id="modalImage" src="" alt="" class="w-full max-h-screen object-contain">
+            </div>
+            <button id="closeModal" class="absolute top-4 right-4 text-white bg-black bg-opacity-50 rounded-full p-2 hover:bg-opacity-70 transition">
+                <i class="fas fa-times text-xl"></i>
+            </button>
+        </div>
+    </div>
+
+    <!-- Testimonials Section -->
+    <section id="testimonials" class="py-16 bg-white">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl font-bold text-center text-gray-800 mb-12">Apa Kata Pelanggan Kami?</h2>
+            <div class="grid md:grid-cols-2 gap-8">
+                <div class="bg-gray-50 rounded-xl p-6 shadow-md">
+                    <div class="flex items-center mb-4">
+                        <div class="bg-blue-500 text-white rounded-full w-10 h-10 flex items-center justify-center font-bold">A</div>
+                        <div class="ml-3">
+                            <h4 class="font-bold">Andi Pratama</h4>
+                            <div class="flex text-yellow-400 text-sm">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="text-gray-600 italic">"Sebagai pengendara motor harian, produk ini sangat membantu. Wajah tidak lagi panas dan terbakar sinar matahari. Bahannya sangat nyaman dan tidak membuat gerah meski dipakai seharian."</p>
+                </div>
+                <div class="bg-gray-50 rounded-xl p-6 shadow-md">
+                    <div class="flex items-center mb-4">
+                        <div class="bg-pink-500 text-white rounded-full w-10 h-10 flex items-center justify-center font-bold">S</div>
+                        <div class="ml-3">
+                            <h4 class="font-bold">Siti Rahayu</h4>
+                            <div class="flex text-yellow-400 text-sm">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="text-gray-600 italic">"Saya punya kulit sensitif dan mudah berjerawat. Setelah pakai ini, wajah lebih terlindungi dari debu dan tidak mudah iritasi. Bahannya lembut dan benar-benar terasa dingin saat dipakai."</p>
+                </div>
+                <div class="bg-gray-50 rounded-xl p-6 shadow-md">
+                    <div class="flex items-center mb-4">
+                        <div class="bg-green-500 text-white rounded-full w-10 h-10 flex items-center justify-center font-bold">B</div>
+                        <div class="ml-3">
+                            <h4 class="font-bold">Budi Santoso</h4>
+                            <div class="flex text-yellow-400 text-sm">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star-half-alt"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="text-gray-600 italic">"Saya pesan 2 untuk istri dan anak saya yang sering ikut saya naik motor. Mereka sangat suka karena tidak gerah dan tetap bisa bernafas lega. Worth it banget harganya!"</p>
+                </div>
+                <div class="bg-gray-50 rounded-xl p-6 shadow-md">
+                    <div class="flex items-center mb-4">
+                        <div class="bg-purple-500 text-white rounded-full w-10 h-10 flex items-center justify-center font-bold">D</div>
+                        <div class="ml-3">
+                            <h4 class="font-bold">Dewi Anggraeni</h4>
+                            <div class="flex text-yellow-400 text-sm">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="text-gray-600 italic">"Awalnya ragu karena harganya lebih mahal dari masker biasa, tapi setelah pakai langsung ketagihan. Tidak perlu pakai sunscreen tebal-tebal lagi karena sudah ada proteksi UV-nya."</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section id="faq" class="py-16 bg-gray-50">
+        <div class="container mx-auto px-4 max-w-4xl">
+            <h2 class="text-3xl font-bold text-center text-gray-800 mb-12">Pertanyaan yang Sering Diajukan</h2>
+            <div class="space-y-4">
+                <div class="bg-white rounded-xl shadow-md overflow-hidden">
+                    <button class="faq-question w-full text-left p-6 font-medium text-lg flex justify-between items-center">
+                        <span>Bagaimana cara perawatan Face Protection Ice Silk?</span>
+                        <i class="fas fa-chevron-down transition-transform"></i>
+                    </button>
+                    <div class="faq-answer px-6 pb-6 hidden">
+                        <p class="text-gray-600">Anda bisa mencucinya dengan tangan menggunakan sabun lembut atau mesin cuci (suhu rendah). Hindari penggunaan pemutih dan setrika. Keringkan di tempat teduh, jangan dijemur langsung di bawah terik matahari.</p>
+                    </div>
+                </div>
+                <div class="bg-white rounded-xl shadow-md overflow-hidden">
+                    <button class="faq-question w-full text-left p-6 font-medium text-lg flex justify-between items-center">
+                        <span>Berapa lama pengiriman biasanya?</span>
+                        <i class="fas fa-chevron-down transition-transform"></i>
+                    </button>
+                    <div class="faq-answer px-6 pb-6 hidden">
+                        <p class="text-gray-600">Pengiriman biasanya memakan waktu 2-5 hari kerja tergantung lokasi pengiriman. Kami bekerja sama dengan kurir terpercaya untuk memastikan produk sampai dengan aman dan tepat waktu.</p>
+                    </div>
+                </div>
+                <div class="bg-white rounded-xl shadow-md overflow-hidden">
+                    <button class="faq-question w-full text-left p-6 font-medium text-lg flex justify-between items-center">
+                        <span>Apakah produk ini bisa dikembalikan?</span>
+                        <i class="fas fa-chevron-down transition-transform"></i>
+                    </button>
+                    <div class="faq-answer px-6 pb-6 hidden">
+                        <p class="text-gray-600">Kami menerima pengembalian dalam kondisi produk belum digunakan/dicuci, dengan kemasan asli, dalam waktu 7 hari setelah produk diterima. Silakan hubungi customer service kami untuk proses lebih lanjut.</p>
+                    </div>
+                </div>
+                <div class="bg-white rounded-xl shadow-md overflow-hidden">
+                    <button class="faq-question w-full text-left p-6 font-medium text-lg flex justify-between items-center">
+                        <span>Apakah ada garansi untuk produk ini?</span>
+                        <i class="fas fa-chevron-down transition-transform"></i>
+                    </button>
+                    <div class="faq-answer px-6 pb-6 hidden">
+                        <p class="text-gray-600">Kami memberikan garansi 30 hari untuk cacat produksi. Jika ada masalah dengan produk yang Anda terima, silakan hubungi customer service kami dengan melampirkan foto sebagai bukti.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="py-16 bg-blue-600 text-white">
+        <div class="container mx-auto px-4 text-center">
+            <h2 class="text-3xl font-bold mb-6">Jangan Lewatkan Promo Spesial Ini!</h2>
+            <p class="text-xl mb-8 max-w-3xl mx-auto">Dapatkan Face Protection Ice Silk dengan diskon 50% hanya hari ini. Stok terbatas!</p>
+            <div class="flex flex-col md:flex-row justify-center items-center gap-4">
+                <div class="text-center bg-white text-blue-600 rounded-lg p-4 shadow-lg">
+                    <div class="text-sm line-through">Rp 298.500</div>
+                    <div class="text-3xl font-bold">Rp 199.000</div>
+                </div>
+                <button id="finalOrderBtn" class="bg-white hover:bg-gray-100 text-blue-600 px-8 py-4 rounded-full font-bold text-lg transition transform hover:scale-105 shadow-lg">
+                    BELI SEKARANG JUGA
+                </button>
+            </div>
+            <p class="mt-6 text-blue-100">*Promo berlaku hingga <span id="promoEndDate"></span> atau sampai stok habis</p>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white py-12">
+        <div class="container mx-auto px-4">
+            <div class="grid md:grid-cols-4 gap-8">
+                <div>
+                    <div class="flex items-center mb-4">
+                        <img src="https://scontent.fsub8-1.fna.fbcdn.net/v/t39.30808-1/480470725_122218523756059217_4375162344964440565_n.jpg?stp=dst-jpg_s200x200_tt6&_nc_cat=110&ccb=1-7&_nc_sid=2d3e12&_nc_ohc=jfyepeJck3QQ7kNvwF2S-C2&_nc_oc=Adljd9pMRuCzpNymtc34UL-GSXTnubZZdFfUJhmwrhIEZhk6L73EuHJulHHJgYCeN-w&_nc_zt=24&_nc_ht=scontent.fsub8-1.fna&_nc_gid=COBS0edcQe4CYG84mmwjWA&oh=00_AfPxpvSpYJTeGcELFOIxRMC-6IBYSGgoC-IXl_-3EJpRTQ&oe=685B476E" alt="Importan.co Logo" class="h-10 w-10 rounded-full">
+                        <span class="ml-3 font-bold text-xl">Importan.co</span>
+                    </div>
+                    <p class="text-gray-400">Toko online terpercaya menyediakan produk-produk berkualitas dengan harga terjangkau.</p>
+                </div>
+                <div>
+                    <h3 class="text-lg font-bold mb-4">Tautan Cepat</h3>
+                    <ul class="space-y-2">
+                        <li><a href="#features" class="text-gray-400 hover:text-white transition">Fitur</a></li>
+                        <li><a href="#testimonials" class="text-gray-400 hover:text-white transition">Testimoni</a></li>
+                        <li><a href="#gallery" class="text-gray-400 hover:text-white transition">Galeri</a></li>
+                        <li><a href="#faq" class="text-gray-400 hover:text-white transition">FAQ</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="text-lg font-bold mb-4">Kontak Kami</h3>
+                    <ul class="space-y-2">
+                        <li class="flex items-center">
+                            <i class="fa-brands fa-instagram mr-2 text-gray-400"></i>
+                            <span class="text-gray-400">@importan.co</span>
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fa-brands fa-facebook mr-2 text-gray-400"></i>
+                            <span class="text-gray-400">Importan.co</span>
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fas fa-phone-alt mr-2 text-gray-400"></i>
+                            <span class="text-gray-400">0822-4593-8572</span>
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fas fa-map-marker-alt mr-2 text-gray-400"></i>
+                            <span class="text-gray-400">Jakarta, Indonesia</span>
+                        </li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="text-lg font-bold mb-4">Pembayaran Aman</h3>
+                    <div class="flex flex-wrap gap-2">
+                        <div class="bg-white p-2 rounded flex items-center justify-center">
+                            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/68/BANK_BRI_logo.svg/126px-BANK_BRI_logo.svg.png" alt="BRI" class="h-6">
+                        </div>
+                        <div class="bg-white p-2 rounded flex items-center justify-center">
+                            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/5c/Bank_Central_Asia.svg/250px-Bank_Central_Asia.svg.png" alt="BCA" class="h-6">
+                        </div>
+                        <div class="bg-white p-2 rounded">
+                            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/72/Logo_dana_blue.svg/2560px-Logo_dana_blue.svg.png" alt="DANA" class="h-6">
+                        </div>
+                        <div class="bg-white p-2 rounded">
+                            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/ad/Bank_Mandiri_logo_2016.svg/250px-Bank_Mandiri_logo_2016.svg.png" alt="MANDIRI" class="h-6">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="border-t border-gray-800 mt-8 pt-8 text-center text-gray-400">
+                <p>&copy; 2023 Importan.co. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Floating Order Button (Mobile) -->
+    <div class="fixed bottom-4 right-4 z-40 md:hidden">
+        <button id="floatingOrderBtn" class="bg-blue-600 hover:bg-blue-700 text-white p-4 rounded-full shadow-lg transition transform hover:scale-110">
+            <i class="fas fa-shopping-cart text-xl"></i>
+        </button>
+    </div>
+
+    <!-- Fake Order Popup -->
+    <div id="orderPopup" class="fixed bottom-4 left-4 right-4 md:left-auto md:right-4 z-50 bg-white rounded-lg shadow-xl p-4 max-w-sm popup-order hidden">
+        <div class="flex justify-between items-start mb-2">
+            <div class="flex items-center">
+                <div class="bg-blue-500 text-white rounded-full w-8 h-8 flex items-center justify-center font-bold text-sm mr-2" id="popupInitial">R</div>
+                <div>
+                    <div class="font-medium" id="popupName">Rudi</div>
+                    <div class="text-xs text-gray-500" id="popupLocation">Bandung</div>
+                </div>
+            </div>
+            <button id="closePopup" class="text-gray-400 hover:text-gray-600">
+                <i class="fas fa-times"></i>
+            </button>
+        </div>
+        <div class="text-sm text-gray-600 mb-2">Baru saja memesan <span class="font-medium">Face Protection Ice Silk</span></div>
+        <div class="text-xs text-gray-400">1 menit yang lalu</div>
+    </div>
+
+    <script>
+        // Dynamic Counters
+        function animateCounter(elementId, target, duration = 2000) {
+            const element = document.getElementById(elementId);
+            const start = parseInt(element.textContent);
+            const increment = target / (duration / 16);
+            let current = start;
+            
+            const timer = setInterval(() => {
+                current += increment;
+                element.textContent = Math.floor(current);
+                
+                if (current >= target) {
+                    element.textContent = target;
+                    clearInterval(timer);
+                }
+            }, 16);
+        }
+
+        // Countdown Timer
+        function updateCountdown() {
+            const now = new Date();
+            const tomorrow = new Date();
+            tomorrow.setDate(now.getDate() + 1);
+            tomorrow.setHours(23, 59, 59, 0);
+            
+            const diff = tomorrow - now;
+            
+            const days = Math.floor(diff / (1000 * 60 * 60 * 24));
+            const hours = Math.floor((diff % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+            const minutes = Math.floor((diff % (1000 * 60 * 60)) / (1000 * 60));
+            const seconds = Math.floor((diff % (1000 * 60)) / 1000);
+            
+            document.getElementById('countdown-days').textContent = days.toString().padStart(2, '0');
+            document.getElementById('countdown-hours').textContent = hours.toString().padStart(2, '0');
+            document.getElementById('countdown-minutes').textContent = minutes.toString().padStart(2, '0');
+            document.getElementById('countdown-seconds').textContent = seconds.toString().padStart(2, '0');
+            
+            // Update promo end date
+            const options = { day: 'numeric', month: 'long', year: 'numeric' };
+            document.getElementById('promoEndDate').textContent = tomorrow.toLocaleDateString('id-ID', options);
+        }
+
+        // Gallery Modal
+        const galleryItems = document.querySelectorAll('.gallery-item');
+        const modal = document.getElementById('galleryModal');
+        const modalImage = document.getElementById('modalImage');
+        const closeModal = document.getElementById('closeModal');
+
+        galleryItems.forEach(item => {
+            item.addEventListener('click', () => {
+                const imgSrc = item.querySelector('img').src;
+                modalImage.src = imgSrc;
+                modal.classList.remove('hidden');
+                document.body.style.overflow = 'hidden';
+            });
+        });
+
+        closeModal.addEventListener('click', () => {
+            modal.classList.add('hidden');
+            document.body.style.overflow = 'auto';
+        });
+
+        modal.addEventListener('click', (e) => {
+            if (e.target === modal) {
+                modal.classList.add('hidden');
+                document.body.style.overflow = 'auto';
+            }
+        });
+
+        // FAQ Accordion
+        const faqQuestions = document.querySelectorAll('.faq-question');
+        
+        faqQuestions.forEach(question => {
+            question.addEventListener('click', () => {
+                const answer = question.nextElementSibling;
+                const icon = question.querySelector('i');
+                
+                answer.classList.toggle('hidden');
+                icon.classList.toggle('transform');
+                icon.classList.toggle('rotate-180');
+            });
+        });
+
+        // Order Buttons
+        const orderButtons = [
+            document.getElementById('orderBtn'),
+            document.getElementById('heroOrderBtn'),
+            document.getElementById('detailOrderBtn'),
+            document.getElementById('finalOrderBtn'),
+            document.getElementById('floatingOrderBtn')
+        ];
+
+        orderButtons.forEach(button => {
+            if (button) {
+                button.addEventListener('click', () => {
+                    window.open('https://vera.orderonline.id/face-protection-ice-silk', '_blank');
+                });
+            }
+        });
+
+        // Fake Order Popup
+        const names = ['Rudi', 'Santi', 'Budi', 'Dewi', 'Agus', 'Rina', 'Fajar', 'Lina'];
+        const cities = ['Jakarta', 'Bandung', 'Surabaya', 'Medan', 'Makassar', 'Yogyakarta', 'Semarang', 'Denpasar'];
+        
+        function showOrderPopup() {
+            const randomName = names[Math.floor(Math.random() * names.length)];
+            const randomCity = cities[Math.floor(Math.random() * cities.length)];
+            
+            document.getElementById('popupInitial').textContent = randomName.charAt(0);
+            document.getElementById('popupName').textContent = randomName;
+            document.getElementById('popupLocation').textContent = randomCity;
+            
+            const popup = document.getElementById('orderPopup');
+            popup.classList.remove('hidden');
+            
+            setTimeout(() => {
+                popup.classList.add('hidden');
+            }, 10000);
+        }
+        
+        document.getElementById('closePopup').addEventListener('click', () => {
+            document.getElementById('orderPopup').classList.add('hidden');
+        });
+
+        // Initialize
+        document.addEventListener('DOMContentLoaded', () => {
+            // Animate counters
+            animateCounter('viewerCount', 1250 + Math.floor(Math.random() * 500));
+            animateCounter('soldCount', 875 + Math.floor(Math.random() * 300));
+            animateCounter('stockCount', 42 - Math.floor(Math.random() * 10));
+            
+            // Start countdown timer
+            updateCountdown();
+            setInterval(updateCountdown, 1000);
+            
+            // Show fake order popup after 3 seconds
+            setTimeout(showOrderPopup, 3000);
+            
+            // Show random fake orders every 20-40 seconds
+            setInterval(() => {
+                if (Math.random() > 0.3) { // 70% chance to show
+                    showOrderPopup();
+                }
+            }, 20000 + Math.random() * 20000);
+        });
+    </script>
+</body>
+</html>
